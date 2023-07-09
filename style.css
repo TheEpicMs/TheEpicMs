@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: fantasy;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(TheEpicMs.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container .circle{
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: 2s ease-in infinite alternate;
+}
+
+.container .circle:nth-child(1){
+  width: 300px;
+  height: 300px;
+  top: 40px;
+  left: -40px;
+  background: linear-gradient(#b700ff54,#efb1f5);
+  animation-name: move-up;
+}
+
+@keyframes move-up{
+  to{
+    transform: translateY(-10px);
+  }
+}
+
+.container .circle:nth-child(2){
+  width: 500px;
+  height: 500px;
+  right: 0px;
+  bottom: 10px;
+  background: linear-gradient(#fbff0042,#c8ff00);
+  animation-name: move-down;
+}
+
+@keyframes move-down{
+  to{
+    transform: translateY(10px);
+  }
+}
+
+.container .circle:nth-child(3){
+  width: 100px;
+  height: 100px;
+  right: 100px;
+  top: 100px;
+  background: linear-gradient(#e47d7d,#ff000044);
+  animation-name: move-left;
+}
+
+@keyframes move-left{
+  to{
+    transform: translateX(20px);
+  }
+}
+
+.container .box {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  position: relative;
+}
+
+.container .box nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .box nav .logo {
+  font-size: 35px;
+  color: #fff;
+  font-weight: none;
+}
+
+.container .box nav .div-links a {
+  margin-right: 30px;
+  color: #fff;
+  font-weight: 500;
+  transition: .3s;
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+.container .box nav .div-links a:hover,
+.container .box nav .div-links a.active {
+  background: rgb(128, 12, 236);
+  color: #fff;
+  text-shadow: none;
+}
+
+.contains {
+  position:relative;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.contains .section h1 {
+  font-size: 55px;
+  color: rgb(229, 255, 0);
+  margin: center;
+}
+
+.contains .section h2 {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.contains .section h3 {
+  color:rgb(234, 0, 255);
+  margin: 20px 0 0px;
+  font-size: 30px;
+}
+
+.contains .section p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.contains .section p2 {
+  color: #fff;
+}
+
+.contains h5 {
+  color: #f7f7f7;
+  position: center;
+  font-size: 40px;
+  padding-bottom: -100px;
+  margin: 100px 10px 10px;
+}
+
+.btn1 {
+  padding: 15px 20px;
+  background: #ff9100;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  color: #f86300;
+  background: #fff;
+}
+
+.btn2 {
+  padding: 15px 20px;
+  background: rgb(255, 0, 0);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: auto 100px;
+}
+
+.btn2:hover {
+  color: rgb(255, 0, 0);
+  background: #fff;
+}
+
+.btn3 {
+  padding: 15px 20px;
+  background-color: rgb(0, 68, 255);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: auto;
+}
+
+.btn3:hover {
+  color: rgb(0, 17, 255);
+  background-color:#fff;
+}
+
+
+@media screen and (max-width: 600px)
+{
+  h1{
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  h2{
+    font-size: 5px;
+    line-height: 50px;
+    background-position-y: bottom 10px;
+  }
+
+  h3{
+    font-size: 20px;
+    line-height: 50px;
+    bottom: -30px;
+  }
+}
